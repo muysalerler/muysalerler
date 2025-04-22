@@ -1,0 +1,136 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    background-color: #1E2A38;
+    color: #f5f7fa;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* === Typography === */
+  h1, h2, h3 {
+    color: #00BCD4;
+    font-family: 'Merriweather', serif;
+  }
+  
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  a {
+    color: #00BCD4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Layout === */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.2s;
+  }
+  
+  /* === Navigation & Footer === */
+  nav, footer {
+    background-color: #004466;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00BCD4;
+  }
+  
+  /* === Header (Profile Area) === */
+  header {
+    text-align: center;
+    background-color: #004466;
+    padding: 2rem 1rem 1rem;
+  }
+  
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+  }
+  
+  /* === Project Cards === */
+  .project {
+    margin-bottom: 2.5rem;
+  }
+  
+  .project img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  /* === Certificate Images === */
+  .cert-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* === Animations === */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .container {
+      padding: 1rem;
+    }
+  
+    header img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .project img, .cert-img {
+      max-width: 100%;
+    }
+  }
+  
